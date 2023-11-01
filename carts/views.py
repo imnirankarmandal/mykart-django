@@ -30,10 +30,6 @@ def add_cart(request, product_id):
             except:
                 pass
 
-
-
-
-
     try:
         cart = Cart.objects.get(cart_id=_cart_id(request)) #get the cart using the cart_id present in the session
     except Cart.DoesNotExist:
