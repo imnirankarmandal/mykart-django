@@ -42,7 +42,7 @@ class Variation(models.Model):
     variation_category     = models.CharField(max_length=100, choices=variation_category_choice)
     variation_value        = models.CharField(max_length=100)
     is_active              = models.BooleanField(default=True)
-    created_at             = models.DateTimeField(auto_now=True)
+    created_at              = models.DateTimeField(auto_now=True)
 
 
     objects = VariationManager()
